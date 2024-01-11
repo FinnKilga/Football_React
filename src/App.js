@@ -1,11 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import PeopleContainer from './components/People/PeopleContainer';
 
 function App() {
   return (
-    <div className="bg-green-400">
-      <h1>HEllo</h1>
-    </div>
+    <PeopleContainer/>
   );
 }
 
