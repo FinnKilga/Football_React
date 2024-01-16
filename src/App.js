@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import PeopleContainer from './components/People/PeopleContainer';
+import Table from "./components/football/Table"
+
+
 
 function App() {
   return (
-    <PeopleContainer/>
+    <Table />
   );
 }
 
