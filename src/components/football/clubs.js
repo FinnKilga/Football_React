@@ -1,1 +1,0 @@
-"https://api.openligadb.de/getavailableteams/bl1/2023"

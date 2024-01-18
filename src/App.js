@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import Table from "./components/football/Table"
+import Table from "./components/Football/Table";
 
 
 
 function App() {
   return (
-    <Table />
+    <Table/>
   );
 }
 

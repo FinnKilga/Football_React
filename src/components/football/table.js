@@ -1,32 +1,31 @@
 import React, { useEffect, useState } from 'react'
-import Games from "./Games"
 
 
+export default function Table() {
+  const [table, setTable] = useState([]);
 
-export default function table() {
-const [game, setGame] = useState([]);
-  
+
   useEffect(() => {
     fetch("https://api.openligadb.de/getbltable/bl1/2023").then(
       (res) => res.json().then((data) => {
-setGame(data);
+        setTable(data);
       })
     );
-  }, []);
-
-
-
-
-
-
+  }, [])
 
 
 
   return (
-    <div>
-      <div className='flex'>Bundeslige</div>
-      <div>Tabelle</div>
-      <div>Clubs</div>
+    <div className='fixed bg-[#171C1C] w-full text-[#DEF5FF] text-lg'>
+
+      <div className='flex'>
+        <div className='m-2 mr-40 text-3xl'>Bundesliga</div>
+        <div className='flex gap-5 items-center'>
+          <div>Link Table</div>
+          <div>Link Clubs</div>
+        </div>
+      </div>
+
     </div>
   )
 }
