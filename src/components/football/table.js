@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import Matches from "./Matches"
+import Menu from './Menu';
 
 
 export default function Table() {
@@ -14,17 +16,20 @@ export default function Table() {
   }, [])
 
 
-
+//<div className='fixed'><Menu /></div>
   return (
-    <div className='fixed bg-[#171C1C] w-full text-[#DEF5FF] text-lg'>
+    <div className=''>
 
-      <div className='flex'>
-        <div className='m-2 mr-40 text-3xl'>Bundesliga</div>
-        <div className='flex gap-5 items-center'>
-          <div>Link Table</div>
-          <div>Link Clubs</div>
-        </div>
+      <div className='text-2xl relativ mt-16 mr-10 text-[#DEF5FF]'>Tabelle</div>
+
+
+      <div className='mt-5'>
+        {table.map(match => {
+          return <Matches teamIconUrl={match.teamIconUrl} teamName={match.teamName} matches={match.matches} won={match.won} draw={match.draw} lost={match.lost} goal={match.goal} goalDiff={match.goalDiff} points={match.points} />
+        })}
       </div>
+
+
 
     </div>
   )

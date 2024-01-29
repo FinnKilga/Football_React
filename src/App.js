@@ -1,11 +1,16 @@
 import './App.css';
-import Table from "./components/Football/Table";
+import Menu from './components/Football/Menu';
+import Table from './components/Football/Table';
 
 
 
 function App() {
   return (
-    <Table/>
+    <div className='bg-[#2B3434]'>
+      <Menu />
+      <Table />
+    </div>
+      
   );
 }
 
