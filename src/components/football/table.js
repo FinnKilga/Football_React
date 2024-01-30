@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Matches from './Matches';
-import { Link } from 'react-router-dom';
 
 export default function Table() {
   const [table, setTable] = useState([]);
@@ -18,9 +17,9 @@ export default function Table() {
     <div className='w-full'>
       <div className='relativ text-3xl text-[#DEF5FF] ml-6 mt-6'>Tabelle</div>
       <div className='mt-5 ml-24 text-[#DEF5FF]'>
-        <div className='flex h-[30] w-3/4 mb-3 items-center justify-between'>
+        <div className='flex h-[30] w-3/4 mb-3 items-center justify-between text-lg'>
           <div className='flex gap-4 items-center'>
-            <div className='ml-5 mr-8'>Platz</div>
+            <div className='ml-5 mr-16'>Platz</div>
             <div>Name</div>
           </div>
           <div className='flex gap-4 mr-6'>

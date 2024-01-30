@@ -5,7 +5,7 @@ import React from 'react'
 export default function Matches({ place, teamIconUrl, teamName, matches, won, draw, lost, goal, goalDiff, points }) {
     return (
 
-        <div className='flex h-[30] w-3/4 bg-[#4DB4FF] mb-3 rounded-lg items-center justify-between'>
+        <div className='flex w-3/4 bg-[#4DB4FF] mb-3 rounded-lg items-center justify-between p-1 text-lg'>
             <div className='flex gap-4 items-center ml-5'>
                 <div>{place}</div>
                 <img src={teamIconUrl} alt="Logo des Clubs" className='h-12'></img>
