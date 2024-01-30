@@ -4,11 +4,13 @@ import Table from './components/Football/Table';
 
 
 
+
 function App() {
   return (
     <div className='bg-[#2B3434]'>
       <Menu />
-      <Table />
+      <Table/>
+      
     </div>
       
   );
