@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Matches from './Matches';
+import { Link } from 'react-router-dom';
 
 export default function Table() {
   const [table, setTable] = useState([]);

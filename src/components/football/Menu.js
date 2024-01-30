@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Menu() {
   return (
@@ -6,8 +7,8 @@ export default function Menu() {
       <div className='flex'>
         <div className='m-2 mr-40 text-3xl'>Bundesliga</div>
         <div className='flex gap-5 items-center'>
-          <div>Link Table</div>
-          <div>Link Clubs</div>
+          <Link to="/Table">Table</Link>
+          <Link to="/Clubs">Clubs</Link>
         </div>
       </div>
     </div>
