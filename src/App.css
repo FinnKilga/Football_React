@@ -1,3 +1,9 @@
 div{
     font-family: 'Inria Sans', sans-serif;
 }
+.activeLink {
+    color:#4DB4FF;
+}
+a:hover{
+    color:#4DB4FF;
+}
