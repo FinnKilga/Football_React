@@ -7,10 +7,6 @@ export default function Team({ teamIconUrl, teamName }) {
                 <img src={teamIconUrl} alt='Clublogo' className='h-32 mr-3'></img>
             </div>
             <div className='text-2xl'>{teamName}</div>
-
-
-
-
         </div>
     )
 }

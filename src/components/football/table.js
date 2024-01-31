@@ -14,7 +14,7 @@ export default function Table() {
 
 
   return (
-    <div className='w-full'>
+    <div className='w-full pb-8'>
       <div className='relativ text-3xl text-[#DEF5FF] ml-6 mt-6'>Tabelle</div>
       <div className='mt-5 ml-24 text-[#DEF5FF]'>
         <div className='flex h-[30] w-3/4 mb-3 items-center justify-between text-lg'>

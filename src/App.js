@@ -4,22 +4,10 @@ import Table from './components/Football/Table';
 import Clubs from './components/Football/Clubs';
 import {
   createBrowserRouter,
-  RouterProvider,
   BrowserRouter as Router,
   Route,
   Routes,
 } from "react-router-dom";
-
-const router = createBrowserRouter([
-  {
-    path: "/Table",
-    element: <Table />,
-  },
-  {
-    path: "/Clubs",
-    element: <Clubs />,
-  },
-]);
 
 
 function App() {
