@@ -8,6 +8,11 @@ export default function Menu() {
         <div className='m-2 mr-40 text-3xl'><b>Bundes</b>Liga</div>
         <div className='flex gap-5 items-center'>
           <NavLink
+            to="/"
+            className={({ isActive }) => isActive ? 'activeLink' : 'navLink'}>
+            Home
+          </NavLink>
+          <NavLink
             to="/Table"
             className={({ isActive }) => isActive ? 'activeLink' : 'navLink'}>
             Table
@@ -17,6 +22,7 @@ export default function Menu() {
             className={({ isActive }) => isActive ? 'activeLink' : 'navLink'}>
             Clubs
           </NavLink>
+
         </div>
       </div>
     </div>

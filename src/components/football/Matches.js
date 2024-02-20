@@ -11,7 +11,7 @@ export default function Matches({ place, teamIconUrl, teamName, matches, won, dr
                 <img src={teamIconUrl} alt="Logo des Clubs" className='h-12'></img>
                 <div>{teamName}</div>
             </div>
-            <div className='flex gap-4 mr-6'>
+            <div className='flex gap-4 mr-6 hidden md:flex'>
                 <div className='w-5'>{matches}</div>
                 <div className='w-5'>{won}</div>
                 <div className='w-5'>{draw}</div>
