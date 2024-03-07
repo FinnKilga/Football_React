@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import {RotatingLines} from 'react-loader-spinner'
+import { RotatingLines } from 'react-loader-spinner'
 import Matches from './Matches';
+import AlexPicture from '../Images/Alex.jpg';
 
 export default function Table() {
   const [isLoading, setIsLoading] = useState(true);
   const [table, setTable] = useState([]);
+  const [visible, setVisible] = React.useState(false);
 
 
   useEffect(() => {
@@ -59,7 +61,7 @@ export default function Table() {
         </div>
         {table.map((match, index) => {
           const place = index + 1;
-          return <Matches place={place} teamIconUrl={match.teamIconUrl} teamName={match.teamName} matches={match.matches} won={match.won} draw={match.draw} lost={match.lost} goal={match.goal} goalDiff={match.goalDiff} points={match.points} />
+          return <Matches place={place} teamIconUrl={match.teamIconUrl} teamName={match.teamName} matches={match.matches} won={match.won} draw={match.draw} lost={match.lost} goal={match.goals} goalDiff={match.goalDiff} points={match.points} />
         })}
       </div>
 
@@ -72,15 +74,17 @@ export default function Table() {
         <div>D: Differenz</div>
         <div>P: Punkte</div>
       </div>
-
-
-
-
-
-
-
-
-
+      <div className='text-[#DEF5FF] mt-5 ml-14'>Zusatzinfos: <br></br>
+        <button className='bg-[#4DB4FF] mb-3 p-2 mt-1.5' onClick={() => setVisible(!visible)}>
+          {visible ? 'Weniger erfahren' : 'Mehr erfahren'}
+        </button>
+        {visible &&
+          <div>
+            <img src={AlexPicture} alt='Bild von Alexander Tschanun' className='h-40'></img>
+            Alexander Tschanun hat mir geholfen die anzeigen zu lassen
+          </div>
+        }
+      </div>
 
 
 

@@ -1,4 +1,5 @@
 import './App.css';
+import './components/Images/Alex.jpg';
 import Menu from './components/Football/Menu';
 import Table from './components/Football/Table';
 import Clubs from './components/Football/Clubs';
