@@ -81,7 +81,7 @@ export default function Table() {
         {visible &&
           <div>
             <img src={AlexPicture} alt='Bild von Alexander Tschanun' className='h-40'></img>
-            Alexander Tschanun hat mir geholfen die anzeigen zu lassen
+            Alexander Tschanun hat mir geholfen die Tore anzeigen zu lassen
           </div>
         }
       </div>
